@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordBridge - Using Word Games to Bridge Generations</title>
+    <meta name="description" content="The family word game where grandparents and grandkids actually want to play together. No scheduling, no awkward video calls - just real connection, one word at a time.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #333;
+            background: #fff;
+        }
+        a { color: #334d7d; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Nav */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #334d7d;
+        }
+        nav a { margin-left: 24px; font-size: 0.95em; }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+            background: linear-gradient(180deg, #f0f4fa 0%, #fff 100%);
+        }
+        .hero h1 {
+            font-size: 3em;
+            color: #334d7d;
+            max-width: 700px;
+            margin: 0 auto 16px;
+            line-height: 1.15;
+        }
+        .hero .subtitle {
+            font-size: 1.3em;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.5;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #334d7d;
+            color: #fff;
+            padding: 16px 40px;
+            border-radius: 12px;
+            font-size: 1.15em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .cta-button:hover { background: #263d66; text-decoration: none; }
+
+        /* Problem */
+        .problem {
+            text-align: center;
+            padding: 60px 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .problem h2 {
+            font-size: 2em;
+            margin-bottom: 24px;
+            color: #333;
+        }
+        .problem .scenarios {
+            font-size: 1.15em;
+            color: #555;
+            line-height: 1.8;
+            font-style: italic;
+        }
+        .problem .transition {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #334d7d;
+            margin-top: 32px;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #334d7d;
+            margin-bottom: 48px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        .feature {
+            background: #f8f9fc;
+            border-radius: 16px;
+            padding: 32px;
+        }
+        .feature h3 {
+            font-size: 1.2em;
+            color: #334d7d;
+            margin-bottom: 12px;
+        }
+        .feature p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* CTA section */
+        .cta-section {
+            text-align: center;
+            padding: 80px 24px;
+            background: #f0f4fa;
+        }
+        .cta-section h2 {
+            font-size: 1.8em;
+            max-width: 600px;
+            margin: 0 auto 24px;
+            color: #333;
+            line-height: 1.3;
+        }
+        .cta-section p {
+            color: #555;
+            margin-bottom: 32px;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+        footer a { color: #888; margin: 0 12px; }
+        footer a:hover { color: #334d7d; }
+        footer .copyright { margin-top: 16px; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2em; }
+            .hero .subtitle { font-size: 1.1em; }
+            nav { padding: 16px 20px; }
+            .features, .problem { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">WordBridge</div>
+    <div>
+        <a href="/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Using Word Games to Bridge Generations</h1>
+    <p class="subtitle">Word games grandparents and grandkids actually want to play. No scheduling required &mdash; just real connection, one word at a time.</p>
+    <a href="https://apps.apple.com/app/wordbridge" class="cta-button">Get Your Family Playing</a>
+</section>
+
+<section class="problem">
+    <h2>We've all been there.</h2>
+    <p class="scenarios">
+        The awkward silence. The forced small talk. The kid who disappears after 2 minutes.<br><br>
+        "How's school?" "Fine."
+    </p>
+    <p class="transition">What if they had something to actually DO together?</p>
+</section>
+
+<section class="features">
+    <h2>Built for Families</h2>
+    <div class="feature-grid">
+        <div class="feature">
+            <h3>Play Anytime, Anywhere</h3>
+            <p>No scheduling required. Grandpa plays a word at breakfast, Shyla responds after school. Games move at your family's pace.</p>
+        </div>
+        <div class="feature">
+            <h3>Fair for All Ages</h3>
+            <p>Kids get an age-based scoring bonus so games stay competitive and fun. An 8-year-old vs Grandpa? Their scores get a 2x multiplier.</p>
+        </div>
+        <div class="feature">
+            <h3>Safe by Design</h3>
+            <p>A private, family-only space with no public features, no ads, and no strangers. Kids only play with verified family members. Parents see all activity.</p>
+        </div>
+        <div class="feature">
+            <h3>Real Connection</h3>
+            <p>In-game chat, family activity feed, and celebration moments. See when Grandpa plays BRIDGE for 80 points. Cheer each other on.</p>
+        </div>
+        <div class="feature">
+            <h3>Classic Word Game</h3>
+            <p>15x15 board with bonus squares, drag-and-drop tiles, 170,000+ word dictionary. Everything you love about word games, built for mobile.</p>
+        </div>
+        <div class="feature">
+            <h3>Play vs Bot</h3>
+            <p>Family busy? Practice against the computer on Easy, Medium, or Hard. Pick up where you left off &mdash; games save automatically.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h2>No more awkward video calls. Just real connection, one word at a time.</h2>
+    <p>Free to download. No ads. No addictive mechanics. Just family word fun.</p>
+    <a href="https://apps.apple.com/app/wordbridge" class="cta-button">Get Started Free</a>
+</section>
+
+<footer>
+    <div>
+        <a href="/support.html">Support</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="mailto:david@pentupinnovation.com">Contact</a>
+    </div>
+    <p class="copyright">&copy; 2026 Pentup Innovation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
